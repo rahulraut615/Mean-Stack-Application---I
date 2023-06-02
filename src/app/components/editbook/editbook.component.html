@@ -1,0 +1,32 @@
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+               <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" formControlName="name"  >
+               </div>
+
+               <div class="form-group">
+                <label for="name">Price</label>
+                <input type="text" class="form-control" formControlName="price"  >
+               </div>
+
+               <div class="form-group">
+                <label for="name">Description</label>
+                <input type="text" class="form-control" formControlName="description" >
+               </div>
+               &nbsp;
+               <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" >Update Book</button>
+               </div>
+
+               <!-- <ul *ngFor="let d of data">
+                <li>{{d.name}}</li>
+                <li>{{d.price}}</li>
+                <li>{{d.description}}</li>
+               </ul> -->
+
+        </form>
+    </div>
+
+</div>
